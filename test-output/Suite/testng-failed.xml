@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="5" verbose="3" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="demo.testcases.Login001">
+        <methods>
+          <include name="setData"/>
+          <include name="report"/>
+          <include name="stopReport"/>
+          <include name="setUpClass"/>
+          <include name="startReport"/>
+          <include name="beforeMethod"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- demo.testcases.Login001 -->
+      <class name="demo.testcases.Logout002">
+        <methods>
+          <include name="report"/>
+          <include name="stopReport"/>
+          <include name="setUpClass"/>
+          <include name="startReport"/>
+          <include name="beforeMethod"/>
+          <include name="setData"/>
+          <include name="tearDownClass"/>
+          <include name="performLogout" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- demo.testcases.Logout002 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
