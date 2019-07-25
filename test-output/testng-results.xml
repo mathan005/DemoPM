@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22101" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:39:12Z">
+  <suite name="Default suite" duration-ms="15848" started-at="2019-07-19T12:38:00Z" finished-at="2019-07-19T12:38:16Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="22101" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:39:12Z">
-      <class name="demo.testcases.TC004DeactivateUser">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="startReport" is-config="true" duration-ms="330" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:38:50Z">
+    <test name="Default test" duration-ms="15848" started-at="2019-07-19T12:38:00Z" finished-at="2019-07-19T12:38:16Z">
+      <class name="demo.testcases.TC001Login">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="startReport" is-config="true" duration-ms="323" started-at="2019-07-19T12:37:59Z" finished-at="2019-07-19T12:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="setData" is-config="true" duration-ms="0" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:38:50Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="setData" is-config="true" duration-ms="0" started-at="2019-07-19T12:38:00Z" finished-at="2019-07-19T12:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="setUpClass" is-config="true" duration-ms="88" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:38:50Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="setUpClass" is-config="true" duration-ms="100" started-at="2019-07-19T12:38:00Z" finished-at="2019-07-19T12:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="report()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="report" is-config="true" duration-ms="5" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:38:50Z">
+        <test-method status="PASS" signature="report()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="report" is-config="true" duration-ms="0" started-at="2019-07-19T12:38:00Z" finished-at="2019-07-19T12:38:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="beforeMethod" is-config="true" duration-ms="8953" started-at="2019-07-19T05:38:50Z" finished-at="2019-07-19T05:38:59Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="beforeMethod" is-config="true" duration-ms="9793" started-at="2019-07-19T12:38:00Z" finished-at="2019-07-19T12:38:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addNewUser(java.lang.String, java.lang.String)[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="addNewUser" duration-ms="10343" started-at="2019-07-19T05:38:59Z" data-provider="fetchData" finished-at="2019-07-19T05:39:10Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="login" duration-ms="3214" started-at="2019-07-19T12:38:10Z" data-provider="fetchData" finished-at="2019-07-19T12:38:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[c902103+june2@gmail.com]]>
+                <![CDATA[c902103+june@gmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -45,20 +45,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewUser -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="afterMethod" is-config="true" duration-ms="2316" started-at="2019-07-19T05:39:10Z" finished-at="2019-07-19T05:39:12Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="afterMethod" is-config="true" duration-ms="2332" started-at="2019-07-19T12:38:13Z" finished-at="2019-07-19T12:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2019-07-19T05:39:12Z" finished-at="2019-07-19T05:39:12Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2019-07-19T12:38:16Z" finished-at="2019-07-19T12:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:demo.testcases.TC004DeactivateUser@5abca1e0]" name="stopReport" is-config="true" duration-ms="227" started-at="2019-07-19T05:39:12Z" finished-at="2019-07-19T05:39:12Z">
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:demo.testcases.TC001Login@5abca1e0]" name="stopReport" is-config="true" duration-ms="232" started-at="2019-07-19T12:38:16Z" finished-at="2019-07-19T12:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
-      </class> <!-- demo.testcases.TC004DeactivateUser -->
+      </class> <!-- demo.testcases.TC001Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
