@@ -32,6 +32,6 @@ public class TC003AddNewUser extends Annotations{
 		.clickSend()
 		.clickPendinguser()
 		.verifyCreatedUser();
-		
-}
+
+	}
 }
