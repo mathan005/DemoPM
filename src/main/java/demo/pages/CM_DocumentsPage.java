@@ -12,7 +12,7 @@ public class CM_DocumentsPage extends Annotations {
 	public CM_DocumentsPage() {
 		PageFactory.initElements(driver, this);}
 
-	@FindBy(how=How.XPATH, using="(//button[@class=' x-btn-text'] [text()='Advanced'])[2]") 
+	@FindBy(how=How.XPATH, using="(//em[@unselectable='on']//button)[5]") 
 	WebElement eleclickAdvanced;
 
 /*	@FindBy(how = How.XPATH, using="(//img[contains(@class,'x-form-trigger x-form-arrow-trigger')])[13]")
@@ -22,7 +22,7 @@ public class CM_DocumentsPage extends Annotations {
 	private WebElement eleclickField;
 
 	@FindBy(how = How.XPATH, using="//div[text()='  Title']")
-	WebElement eleselectTitle;
+	WebElement eleselectField;
 
 	@FindBy(how = How.XPATH, using="(//img[contains(@class,'x-form-trigger x-form-arrow-trigger')])[14]")
 	WebElement eleclickoperator;
@@ -32,15 +32,24 @@ public class CM_DocumentsPage extends Annotations {
 
 	@FindBy(how = How.XPATH, using="//div[contains(@class,'x-form-field-wrap x-form-field-trigger-wrap')]/following-sibling::input[1]")
 	WebElement eleenterTitle;
-
+	
 	@FindBy(how = How.XPATH, using="//button[text()='Search']")
 	WebElement eleclickadvSearch;
 	
-	@FindBy(how = How.XPATH, using="//input[@class=\"x-form-text x-form-field x-form-focus\"]")
+	@FindBy(how = How.XPATH, using="(//input[contains(@class,'x-form-text x-form-field')])[2]")
 	WebElement eleentertext;
 	
-	@FindBy(how = How.XPATH, using="(//img[@class='x-form-trigger x-form-search-trigger-main'])[2]")
+	@FindBy(how = How.XPATH, using="(//img[@src='/ds/e/images/default/s.gif'])[3]")
 	WebElement eleclickSearch;
+	
+	@FindBy(how = How.XPATH, using="//span[text()='New']")
+	WebElement eleclickNew;
+	
+	@FindBy(how = How.XPATH, using="//span[text()='Fileroom']")
+	WebElement eleclickFr;
+	
+	
+	
 
 	
 	public CM_DocumentsPage clickAdvanced() {
@@ -49,7 +58,7 @@ public class CM_DocumentsPage extends Annotations {
 
 	public CM_DocumentsPage selectField() {
 		click(eleclickField);
-		click(eleselectTitle);
+		click(eleselectField);
 		return this;}
 
 	public CM_DocumentsPage selectOperator() {
@@ -72,6 +81,26 @@ public class CM_DocumentsPage extends Annotations {
 	public CM_SearchresultsPage clickSearch() {
 		click(eleclickSearch);
 		return new CM_SearchresultsPage();}
+	
+	public CM_DocumentsPage clickNew() {
+		click(eleclickNew);
+		return this;}
+	
+	public CM_NewFileroomPage clickFileroom() {
+		click(eleclickFr);
+		return new CM_NewFileroomPage();}
+	
+	public CM_DocumentsPage enterFRTitle(String FRTitle) {
+		clearAndType(eleenterFRTitle, FRTitle);
+		return this;}
+	
+	
+	/*public CM_DocumentsPage verifyFileroom() {
+		verifyPartialText(ele, FRTitle)
+		
+		return this;}*/
+	
+	
 
 }
 

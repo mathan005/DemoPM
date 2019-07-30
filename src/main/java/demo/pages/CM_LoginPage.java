@@ -33,11 +33,7 @@ public class CM_LoginPage extends Annotations {
 	}
 	
 	public CM_LoginPage verifyLogout() {
-		String logintext=getElementText(eleclicklogin);
-		if(logintext.contains("Login")) {
-			System.out.println("User is on the Login page");
-		}
-		else System.out.println("User is not landed to Login page");
+		verifyExactText(eleclicklogin, "Login");
 		return this;
 	}
 
