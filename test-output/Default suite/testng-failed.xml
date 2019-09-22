@@ -3,19 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.testcases.AddNewUser003">
+      <class name="demo.testcases.TC007CreateFR">
         <methods>
           <include name="report"/>
           <include name="stopReport"/>
           <include name="setUpClass"/>
+          <include name="addNewUser" invocation-numbers="0"/>
           <include name="startReport"/>
           <include name="beforeMethod"/>
           <include name="setData"/>
           <include name="tearDownClass"/>
-          <include name="addNewUser" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- demo.testcases.AddNewUser003 -->
+      </class> <!-- demo.testcases.TC007CreateFR -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
