@@ -3,19 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.testcases.AddNewUser003">
+      <class name="com.selbot.testcases.TC001_CreateLead">
         <methods>
           <include name="report"/>
           <include name="stopReport"/>
+          <include name="setData"/>
           <include name="setUpClass"/>
           <include name="startReport"/>
+          <include name="createLead"/>
           <include name="beforeMethod"/>
-          <include name="setData"/>
           <include name="tearDownClass"/>
-          <include name="addNewUser" invocation-numbers="0"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- demo.testcases.AddNewUser003 -->
+      </class> <!-- com.selbot.testcases.TC001_CreateLead -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
