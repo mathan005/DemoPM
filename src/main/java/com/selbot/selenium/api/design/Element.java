@@ -185,4 +185,11 @@ public interface Element {
 	 */
 	public boolean verifySelected(WebElement ele);
 	
+	
+	public void rightClick(WebElement ele);
+	
+	public void doubleClick(WebElement ele);
+	
+	public int getTotalpageresults(WebElement ele);
+	
 }

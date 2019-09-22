@@ -503,7 +503,21 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			Actions actions = new Actions(driver);
 			actions.contextClick(ele).perform();
-		//	Actions doubleclick = actions.doubleClick(ele);		
+					text = ele.getText();
+		}
+		 catch (StaleElementReferenceException e) {
+				reportStep("The Element "+text+" could not be clicked", "fail");
+				throw new RuntimeException();
+			} 
+	}
+	
+	public void doubleClick(WebElement ele) {
+		String text="";
+		try {
+			wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.elementToBeClickable(ele));
+			Actions actions = new Actions(driver);
+			Actions doubleclick = actions.doubleClick(ele);		
 			text = ele.getText();
 		}
 		 catch (StaleElementReferenceException e) {
@@ -512,8 +526,17 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 			} 
 	}
 	
-
-
+	public int getTotalpageresults(WebElement ele) {
+	
+try {
+	String text = ele.getText();
+	String substringtext = text.substring(29,text.length());
+	int totalresults = Integer.parseInt(substringtext);
+	return totalresults;
+} catch (ElementNotInteractableException e) {
+	reportStep("The Element "+ele+" is not Interactable", "fail");
+	throw new RuntimeException();
+}
 	}
-
+}
 
